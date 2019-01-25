@@ -1,0 +1,10 @@
+{
+    "content_scripts": [ {
+       "js": ["jquery-3.3.1.min.js", "content.js"],
+       "matches": ["https://ejudge.it.kmitl.ac.th/problem*"]
+    } ],
+    "manifest_version": 2,
+    "name": "<e>Judge to text editor",
+    "version": "0.1"
+ }
+ 
