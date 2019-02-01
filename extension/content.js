@@ -11,13 +11,24 @@ $( document ).ready(function() {
             "</div>"
         );
 
-        var path = "K:\\Files\\GitHub\\CP2018\\lab\\";
+        function getPath(){
+            return localStorage.getItem("code_path");
+        }
+
+        function setPath(){
+            newPath = prompt("Enter path");
+            localStorage.setItem("code_path", newPath);
+        }
+
+        if((getPath() == null) || (getPath() == "")) {setPath()}
 
         $("#ext_open").click(function() {
             var url = window.location.href;
             var problem_id = url.substr(url.lastIndexOf('/') + 1);
-            location.href = "vscode://file/"+ path + problem_id + ".c";
+            location.href = "vscode://file/"+ getPath() + "/" + problem_id + ".c";
         });
+
+        $("#ext_edit").click(function() {setPath();});
 
         //Show hidden editor
         $(".brython").removeClass("hidden");
