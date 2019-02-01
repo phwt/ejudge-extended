@@ -1,4 +1,4 @@
-# \<e\>Judge and Visual Studio Code Integration
+# \<e\>Judge Extended
 Extend \<e\>Judge functionality for ease in coding and submitting
 
 ## Features
