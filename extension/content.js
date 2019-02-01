@@ -92,24 +92,26 @@ $( document ).ready(function() {
 
         //Add addition button to the tab
         $(".question-tab").append(
-            "<button class='btn btn-info' id='btn_save' title='Save Answers'><i class='fa fa-save'></i></button>&nbsp;"+
+            "<button class='btn btn-success' id='btn_save' title='Save Answers'><i class='icon-save fa fa-save'></i></button>&nbsp;"+
             "<button class='btn btn-warning' id='btn_restore' title='Restore Answers'><i class='fa fa-undo'></i></button>&nbsp;"+
-            "&nbsp;<button class='btn btn-success' id='btn_export' title='Export Answers'><i class='fa fa-upload'></i></button>&nbsp;"+
-            "<button class='btn btn-success' id='btn_import' title='Import Answers'><i class='fa fa-download'></i></button>"
+            "<button class='btn btn-danger' id='btn_clear' title='Clear Answers'><i class='fa fa-times'></i></button>&nbsp;"+
+            "&nbsp;&nbsp;<button class='btn btn-info' id='btn_export' title='Export Answers'><i class='fa fa-upload'></i></button>&nbsp;"+
+            "<button class='btn btn-info' id='btn_import' title='Import Answers'><i class='fa fa-download'></i></button>"
         );
 
         //Handle additional button click action
         $('#btn_save').click(function() {
+            $('.icon-save').removeClass("fa-save").addClass("fa-check").delay(500).queue(function(){
+                $(this).removeClass("fa-check").addClass("fa-save").dequeue();
+            });
             saveAnswers();
         });
 
-        $('#btn_restore').click(function() {
-            fillAnswers(localStorage.getItem("quiz_answers"));
-        });
+        $('#btn_restore').click(function() {fillAnswers(localStorage.getItem("quiz_answers"));});
 
-        $('#btn_export').click(function() {
-            prompt('Export Result', getAnswers());
-        });
+        $('#btn_clear').click(function() {$('[name^=answer').val("")});
+
+        $('#btn_export').click(function() {prompt('Export Result', getAnswers());});
 
         $('#btn_import').click(function() {
             importArray = prompt('Import Result');
