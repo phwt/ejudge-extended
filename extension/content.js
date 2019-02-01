@@ -4,9 +4,12 @@ $( document ).ready(function() {
     if(window.location.href.includes("problem")){
 
         //Open problem on computer
-        $(".dl-horizontal").append(`
-            <br><button id="ext_open" class="btn btn-secondary btn-block">View on computer</button>
-        `);
+        $(".dl-horizontal").append(
+            "<br><div class='btn-group' style='display:flex' role='group'>"+
+            "<button id='ext_open' style='flex:1' class='btn btn-default'>View on computer</button>"+
+            "<button id='ext_edit' style='flex:1' class='btn btn-default'><i class='fa fa-edit'></i></button>"+
+            "</div>"
+        );
 
         var path = "K:\\Files\\GitHub\\CP2018\\lab\\";
 
@@ -28,7 +31,7 @@ $( document ).ready(function() {
             $('.brython > .box > .box-body').fadeToggle();
         });
     
-    //Quizes Page
+    //Quizzes Page
     } else if(window.location.href.includes("quiz")){
 
         //Read input and return as array
