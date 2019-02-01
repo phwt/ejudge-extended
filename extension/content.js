@@ -22,6 +22,11 @@ $( document ).ready(function() {
             $(this).html(old_text + "- " + id);
         });
 
+        $(".question-tab").append(
+            "<button class='btn btn-info' title='Save Answers'><i class='fa fa-save'></i></button>&nbsp;"+
+            "<button class='btn btn-warning' title='Restore Answers'><i class='fa fa-undo'></i></button>"
+        );
+
         $('[data-toggle="tab"]').click(function() {
             $('[data-toggle="tab"]').each(function(i, obj) {
                 $(this).removeClass('btn-primary').addClass('btn-default');
