@@ -2,16 +2,6 @@
   "autorun": false,
   "terminals": [
     {
-      "name": "Build and Run current file",
-      "description": "Build and Run current C file using GCC",
-      "focus": true,
-      "cwd": "[fileDirname]",
-      "commands": [
-        "gcc [fileBasename] -o [fileBasenameNoExtension]",
-        ".\\[fileBasenameNoExtension].exe"
-      ]
-    },
-    {
       "name": "Submit to <e>Judge",
       "description": "Submit current problem in <e>Judge",
       "focus": true,
@@ -29,14 +19,6 @@
       "focus": true,
       "onlySingle": true,
       "command": "start chrome https://ejudge.it.kmitl.ac.th/problem/[fileBasenameNoExtension]"
-    },
-    {
-      "name": "Executable cleanup",
-      "description": "Delete all .exe files in current directory",
-      "focus": true,
-      "onlySingle": true,
-      "cwd": "[fileDirname]",
-      "command": "del *.exe"
     }
   ]
 }
