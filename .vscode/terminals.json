@@ -2,48 +2,41 @@
   "autorun": false,
   "terminals": [
     {
-      "name": "Single",
-      "description": "This is a description",
+      "name": "Build and Run current file",
+      "description": "Build and Run current C file using GCC",
       "focus": true,
-      "command": "echo \"Hello World\""
-    },
-    {
-      "name": "Multi",
+      "cwd": "[fileDirname]",
       "commands": [
-        "echo \"Did you know?\"",
-        "echo \"You can execute multiple commands\""
+        "gcc [fileBasename] -o [fileBasenameNoExtension]",
+        ".\\[fileBasenameNoExtension].exe"
       ]
     },
     {
-      "name": "Single - No execution",
-      "execute": false,
-      "command": "Press enter to run me"
-    },
-    {
-      "name": "Multi - No execution",
-      "execute": false,
+      "name": "Submit to <e>Judge",
+      "description": "Submit current problem in <e>Judge",
+      "focus": true,
+      "onlySingle": true,
+      "cwd": "[workspaceFolder]",
       "commands": [
-        "echo \"Only the last command won't be executed\"",
-        "Press enter to run me"
+        "Remove-item alias:curl",
+        "set /p token=<current_token.txt",
+        "curl --cookie ./ejudge_cookie -F 'file=@[file]' -F '_token=%token%' -F 'lang=c' https://ejudge.it.kmitl.ac.th/problem/[fileBasenameNoExtension]/send"
       ]
     },
     {
-      "name": "Persistent",
+      "name": "Open in <e>Judge",
+      "description": "Open current problem in <e>Judge",
       "focus": true,
       "onlySingle": true,
-      "persistent": "demo_persistent",
-      "command": "echo \"I'm persistent! Try to reload the window and re-execute this command\""
+      "command": "start chrome https://ejudge.it.kmitl.ac.th/problem/[fileBasenameNoExtension]"
     },
     {
-      "name": "Variable Substitution",
-      "description": "Many special strings can be substituted dynamically",
-      "command": "echo \"workspaceFolder: [workspaceFolder]\\nworkspaceFolderBasename: [workspaceFolderBasename]\\nfile: [file]\\nrelativeFile: [relativeFile]\\nfileBasename: [fileBasename]\\nfileBasenameNoExtension: [fileBasenameNoExtension]\\nfileDirname: [fileDirname]\\nfileExtname: [fileExtname]\\ncwd: [cwd]\\nlineNumber: [lineNumber]\""
-    },
-    {
-      "name": "Only Single",
-      "open": true,
+      "name": "Executable cleanup",
+      "description": "Delete all .exe files in current directory",
+      "focus": true,
       "onlySingle": true,
-      "command": "echo \"I will not run with the others\""
+      "cwd": "[fileDirname]",
+      "command": "del *.exe"
     }
   ]
 }
