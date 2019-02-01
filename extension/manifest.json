@@ -1,10 +1,16 @@
 {
-    "content_scripts": [ {
-       "js": ["jquery-3.3.1.min.js", "content.js"],
-       "matches": ["https://ejudge.it.kmitl.ac.th/*"]
-    } ],
-    "manifest_version": 2,
-    "name": "<e>Judge to text editor",
-    "version": "0.1"
+   "content_scripts": [ {
+      "js": ["jquery-3.3.1.min.js", "content.js"],
+      "matches": ["https://ejudge.it.kmitl.ac.th/*"]
+   } ],
+   "manifest_version": 2,
+   "name": "<e>Judge Extended",
+   "description": "Add more functionality to <e>Judge grading system.",
+   "version": "0.2",
+   "icons": {
+     "128": "/assets/icon128.png",
+     "16": "/assets/icon16.png",
+     "48": "/assets/icon48.png"
+   }
  }
  
