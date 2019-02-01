@@ -13,6 +13,17 @@ $( document ).ready(function() {
             var problem_id = url.substr(url.lastIndexOf('/') + 1);
             location.href = "vscode://file/"+ path + problem_id + ".c";
         });
+
+        $(".brython").removeClass("hidden");
+        $(".btn-exitfullscreen, .btn-fullscreen").hide();
+        $(".brython > .box > .box-header").append(
+            "<button style='margin:10px' id='btn_editor_toggle' class='btn btn-success pull-right'><i class='fa fa-eye-slash'></i> Toggle Editor</button>"
+        );
+        $('.brython > .box > .box-body').hide();
+
+        $('#btn_editor_toggle').click(function() {
+            $('.brython > .box > .box-body').fadeToggle();
+        });
     
     //Quizes Page
     } else if(window.location.href.includes("quiz")){
