@@ -2,3 +2,5 @@
 curl_send.txt
 extension/ejudge-extended.zip
 *.psd
+terminals/ejudge_cookie
+terminals/token
