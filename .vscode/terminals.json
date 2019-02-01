@@ -19,7 +19,7 @@
       "cwd": "[workspaceFolder]",
       "commands": [
         "Remove-item alias:curl",
-        "set /p token=<current_token.txt",
+        "set /p token=<current_token",
         "curl --cookie ./ejudge_cookie -F 'file=@[file]' -F '_token=%token%' -F 'lang=c' https://ejudge.it.kmitl.ac.th/problem/[fileBasenameNoExtension]/send"
       ]
     },
