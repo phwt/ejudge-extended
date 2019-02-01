@@ -4,3 +4,5 @@ extension/ejudge-extended.zip
 *.psd
 terminals/ejudge_cookie
 terminals/token
+ejudge_cookie
+token
