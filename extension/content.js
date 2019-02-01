@@ -2,6 +2,8 @@ $( document ).ready(function() {
 
     //Problems page
     if(window.location.href.includes("problem")){
+
+        //Open problem on computer
         $(".dl-horizontal").append(`
             <br><button id="ext_open" class="btn btn-secondary btn-block">View on computer</button>
         `);
@@ -14,6 +16,7 @@ $( document ).ready(function() {
             location.href = "vscode://file/"+ path + problem_id + ".c";
         });
 
+        //Show hidden editor
         $(".brython").removeClass("hidden");
         $(".btn-exitfullscreen, .btn-fullscreen").hide();
         $(".brython > .box > .box-header").append(
@@ -28,6 +31,7 @@ $( document ).ready(function() {
     //Quizes Page
     } else if(window.location.href.includes("quiz")){
 
+        //Read input and return as array
         function getAnswers(){
             arr_out = []; last_id = ""; pos = -1;
             $("[name^=answer").each(function(j, obj) {
@@ -42,21 +46,27 @@ $( document ).ready(function() {
             return JSON.stringify(arr_out);
         }
 
+        //Save current answers into localStorage
         function saveAnswers(){
             localStorage.setItem("quiz_answers", getAnswers());
         }
 
+        //Fill in answers box with given array
         function fillAnswers(answerArray){
             answerArray =  JSON.parse(answerArray);
-            current = parseInt(answerArray[0][0]);
-            for (var i = 0; i < answerArray.length; i++) {
-                num = 1;
-                $("[name='answer["+current+"][]']").each(function(j, obj) {
-                    $(this).val(answerArray[i][num]);
-                    num++;
-                });
-                current++;
-            }            
+            try {
+                current = parseInt(answerArray[0][0]);
+                for (var i = 0; i < answerArray.length; i++) {
+                    num = 1;
+                    $("[name='answer["+current+"][]']").each(function(j, obj) {
+                        $(this).val(answerArray[i][num]);
+                        num++;
+                    });
+                    current++;
+                }
+            } catch(err){
+                alert("Invalid Input!");
+            }
         }
 
         //Display case ID
