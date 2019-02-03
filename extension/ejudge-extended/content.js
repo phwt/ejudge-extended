@@ -28,7 +28,7 @@ $( document ).ready(function() {
         $("#ext_open").click(function() {
             var url = window.location.href;
             var problem_id = url.substr(url.lastIndexOf('/') + 1);
-            location.href = "vscode://file/"+ getPath() + "/" + problem_id + getLang();
+            location.href = "vscode://file/"+ getPath() + "/" + problem_id + "." + getLang();
         });
 
         $("#ext_edit").click(function() {setPath();});
