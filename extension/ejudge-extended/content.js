@@ -11,9 +11,8 @@ $( document ).ready(function() {
             "</div>"
         );
 
-        function getPath(){
-            return localStorage.getItem("code_path");
-        }
+        var getPath = function(){return localStorage.getItem("code_path")};
+        var getLang = function(){return $(".dl-horizontal dd:nth-child(6)").html()};
 
         function setPath(){
             newPath = prompt("Enter path");
@@ -24,12 +23,12 @@ $( document ).ready(function() {
             alert("Operation Terminated by user");
         }
 
-        if((getPath() == null) || (getPath() == "")) {setPath()}
+        if((getPath() == null) || (getPath() == "")){setPath()}
 
         $("#ext_open").click(function() {
             var url = window.location.href;
             var problem_id = url.substr(url.lastIndexOf('/') + 1);
-            location.href = "vscode://file/"+ getPath() + "/" + problem_id + ".c";
+            location.href = "vscode://file/"+ getPath() + "/" + problem_id + getLang();
         });
 
         $("#ext_edit").click(function() {setPath();});
