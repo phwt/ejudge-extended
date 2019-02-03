@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    $('head').append("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
+
     //Problems page
     if(window.location.href.includes("problem")){
 
