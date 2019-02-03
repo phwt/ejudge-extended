@@ -1,7 +1,6 @@
 $( document ).ready(function() {
 
-    $('head').append("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
-    $(".table-striped").removeClass("table-striped");
+    $('head').prepend("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
 
     //Change Favicon and Logo(front page only) to white variant
     $('[rel="shortcut icon"]').attr("href", chrome.runtime.getURL('favicon_wt_16.png'));
