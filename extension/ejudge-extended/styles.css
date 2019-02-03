@@ -1,23 +1,31 @@
-p, h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body{
+h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title, .label, a.btn, .nav > li > a > i, #question-0 > p, pre{
   color: white !important;
 }
 
-.breadcrumb > li > a, .pull-right > a, td > a{
-  color: #DB7C54 !important;
+.breadcrumb > li > a, .pull-right > a, td > a, h4 > a, p > a{
+  color: #0097E0 !important;
 }
 
-.label{
-  color: white !important;
+a.btn-default, td > textarea{
+  color: black !important;
 }
 
-body, .content{
+body, .content, pre{
   background-color: #555 !important;
 }
 
-.content-header, .box{
+li.disabled > span {
   background-color: #404040 !important;
-  border-top: 0 !important;
+  color: #777 !important;
+  border: 0 !important;
 }
+
+.content-header, .box, .pagination > li > a{
+  background-color: #404040 !important;
+  color: white !important;
+  border: 0 !important;
+}
+
 
 .box-header, .box-footer, nav{
   background-color: #333 !important;
@@ -28,20 +36,12 @@ body, .content{
   border-top: 0 !important;
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>td{
+.table-striped>tbody>tr:nth-of-type(odd)>td, .table-hover>tbody>tr:hover{
   background-color: #333333 !important;
 }
 
-.table-hover>tbody>tr:hover {
-  background-color: #333333 !important;
-}
-
-nav{
+nav, pre{
   border: 0 !important;
-}
-
-.nav > li > a > i{
-  color: white !important;
 }
 
 .text-muted{
