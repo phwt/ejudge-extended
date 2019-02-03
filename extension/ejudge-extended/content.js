@@ -15,7 +15,7 @@ $( document ).ready(function() {
     // }
 
     //Change Favicon and Logo(front page only) to white variant
-    $('[rel="shortcut icon"]').attr("href", chrome.runtime.getURL('favicon_wt_16.png'));
+    // $('[rel="shortcut icon"]').attr("href", chrome.runtime.getURL('favicon_wt_16.png'));
 
     //Problems page
     if(window.location.href.includes("problem")){
