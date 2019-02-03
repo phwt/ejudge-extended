@@ -1,27 +1,78 @@
-p, h1, h2, h3, h4, h5, small, td, th, dt, dd, span{
-  color: white !IMPORTANT;
+p, h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body{
+  color: white !important;
+}
+
+.breadcrumb > li > a, .pull-right > a, td > a{
+  color: #DB7C54 !important;
+}
+
+.label{
+  color: white !important;
 }
 
 body, .content{
-  background-color: #555 !IMPORTANT;
+  background-color: #555 !important;
 }
 
 .content-header, .box{
-  background-color: #444 !IMPORTANT;
+  background-color: #404040 !important;
+  border-top: 0 !important;
 }
 
 .box-header, .box-footer, nav{
-  background-color: #333 !IMPORTANT;
+  background-color: #333 !important;
+  border-top: 0 !important;
+}
+
+.table > tbody > tr > td {
+  border-top: 0 !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>td{
+  background-color: #333333 !important;
+}
+
+.table-hover>tbody>tr:hover {
+  background-color: #333333 !important;
 }
 
 nav{
-  border: 0 !IMPORTANT;
+  border: 0 !important;
 }
 
 .nav > li > a > i{
-  color: white;
+  color: white !important;
+}
+
+.text-muted{
+  color:#BFBFBF !important;
 }
 
 .skin-black .navbar .nav > li > a:hover, .skin-black .navbar .nav > li > a:active, .skin-black .navbar .nav > li > a:focus, .skin-black .navbar .nav .open > a, .skin-black .navbar .nav .open > a:hover, .skin-black .navbar .nav .open > a:focus {
-  background: #222 !IMPORTANT;
+  background: #222 !important;
+}
+
+/*Syntax highlight recolor*/
+.syntaxhighlighter div.line.alt2, .syntaxhighlighter div.line.alt1 {
+  background-color: #333 !important;
+}
+
+code.c.plain{
+  color: white !important;
+}
+
+code.c.string{
+  color: #CE723B !important;
+}
+
+code.c.functions{
+  color: #DCDC9D !important;
+}
+
+code.c.color1{
+  color: #3E9CCA !important;
+}
+
+code.c.preprocessor{
+  color: #C586C0 !important;
 }
