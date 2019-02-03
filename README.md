@@ -60,6 +60,7 @@ Extend \<e\>Judge functionality for ease in coding and submitting
    - `Open in <e>Judge` | Open current problem in <e>Judge
 
 ## To-do list
-- [ ] Add other language support.
+- [X] Add other language support.
 - [ ] Make Visual Studio Code part standalone (Does not require Terminals Manager and cURL).
 - [ ] More detailed respond on login and submit.
+- [ ] Add Dark Mode
