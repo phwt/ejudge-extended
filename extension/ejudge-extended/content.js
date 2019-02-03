@@ -17,7 +17,11 @@ $( document ).ready(function() {
 
         function setPath(){
             newPath = prompt("Enter path");
-            localStorage.setItem("code_path", newPath);
+            if(newPath != null){
+                localStorage.setItem("code_path", newPath);
+                return
+            }
+            alert("Operation Terminated by user");
         }
 
         if((getPath() == null) || (getPath() == "")) {setPath()}
@@ -115,7 +119,11 @@ $( document ).ready(function() {
 
         $('#btn_import').click(function() {
             importArray = prompt('Import Result');
-            fillAnswers(importArray);
+            if(importArray != null){
+                fillAnswers(importArray);
+                return
+            }
+            alert("Operation Terminated by user");
         });
 
         //Handle tab button click action
