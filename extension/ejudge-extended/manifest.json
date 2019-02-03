@@ -12,6 +12,7 @@
      "128": "/assets/icon128.png",
      "16": "/assets/icon16.png",
      "48": "/assets/icon48.png"
-   }
+   },
+   "web_accessible_resources": ["styles.css", "itkmitl_wt_140.png", "favicon_wt_16.png"]
  }
  
