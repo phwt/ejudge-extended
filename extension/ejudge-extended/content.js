@@ -1,12 +1,21 @@
+// $('head').prepend("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
 $( document ).ready(function() {
-
-    $('head').prepend("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
+    
+    // $('.navbar-nav').prepend("<li class='dark-menu'><a href='#' id='toggle_darkmode'><i class='far fa-lightbulb'></i></a></li>");
+    // $("#toggle_darkmode").click(function() {
+    //     status_bool = localStorage.getItem("ejudge_dark_enabled") == 'true';
+    //     status_bool = !status_bool;
+    //     localStorage.setItem("ejudge_dark_enabled", status_bool);
+    //     // console.log(localStorage.getItem("ejudge_dark_enabled") == 'true');
+    //     location.reload();
+    // });
+    
+    // if(localStorage.getItem("ejudge_dark_enabled") == 'true'){
+    //     // $('head').prepend("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
+    // }
 
     //Change Favicon and Logo(front page only) to white variant
     $('[rel="shortcut icon"]').attr("href", chrome.runtime.getURL('favicon_wt_16.png'));
-    if(window.location.href.includes("https://ejudge.it.kmitl.ac.th/")){
-        $("[alt=Logo]").attr("src", chrome.runtime.getURL("itkmitl_wt_140.png"));
-    }
 
     //Problems page
     if(window.location.href.includes("problem")){

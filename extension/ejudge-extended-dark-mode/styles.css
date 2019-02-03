@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title, .label, a.btn, .nav > li > a > i, #question-0 > p, pre{
+h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title, .label, a.btn, .nav > li > a > i, #question-0 > p, pre, .well, div.nav-tabs-custom > .nav-tabs > li.active > a{
   color: white !important;
 }
 
@@ -6,11 +6,11 @@ h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title,
   color: #0097E0 !important;
 }
 
-a.btn-default, td > textarea{
+a.btn-default, td > textarea, select{
   color: black !important;
 }
 
-body, .content, pre{
+body, .content, pre, .well{
   background-color: #555 !important;
 }
 
@@ -27,20 +27,20 @@ li.disabled > span {
 }
 
 
-.box-header, .box-footer, nav{
+.box-header, .box-footer, nav, div.nav-tabs-custom > .nav-tabs > li.active > a, .nav-tabs > li, .tab-content, ul.nav{
   background-color: #333 !important;
-  border-top: 0 !important;
+  border: 0 !important;
 }
 
 .table > tbody > tr > td {
   border-top: 0 !important;
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>td, .table-hover>tbody>tr:hover{
+.table-striped>tbody>tr:nth-of-type(odd)>td, .table-hover>tbody>tr:hover, table{
   background-color: #333333 !important;
 }
 
-nav, pre{
+nav, pre, .well{
   border: 0 !important;
 }
 
