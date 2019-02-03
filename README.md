@@ -63,4 +63,7 @@ Extend \<e\>Judge functionality for ease in coding and submitting
 - [X] Add other language support.
 - [ ] Make Visual Studio Code part standalone (Does not require Terminals Manager and cURL).
 - [ ] More detailed respond on login and submit.
-- [ ] Add Dark Mode
+- [X] Add Dark Mode
+
+## Known Issue
+- Save/Restore/Import option not working in some instance.
