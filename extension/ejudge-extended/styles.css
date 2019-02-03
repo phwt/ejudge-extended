@@ -1,0 +1,27 @@
+p, h1, h2, h3, h4, h5, small, td, th, dt, dd, span{
+  color: white !IMPORTANT;
+}
+
+body, .content{
+  background-color: #555 !IMPORTANT;
+}
+
+.content-header, .box{
+  background-color: #444 !IMPORTANT;
+}
+
+.box-header, .box-footer, nav{
+  background-color: #333 !IMPORTANT;
+}
+
+nav{
+  border: 0 !IMPORTANT;
+}
+
+.nav > li > a > i{
+  color: white;
+}
+
+.skin-black .navbar .nav > li > a:hover, .skin-black .navbar .nav > li > a:active, .skin-black .navbar .nav > li > a:focus, .skin-black .navbar .nav .open > a, .skin-black .navbar .nav .open > a:hover, .skin-black .navbar .nav .open > a:focus {
+  background: #222 !IMPORTANT;
+}
