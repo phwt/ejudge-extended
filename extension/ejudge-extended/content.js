@@ -1,21 +1,4 @@
-// $('head').prepend("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
 $( document ).ready(function() {
-    
-    // $('.navbar-nav').prepend("<li class='dark-menu'><a href='#' id='toggle_darkmode'><i class='far fa-lightbulb'></i></a></li>");
-    // $("#toggle_darkmode").click(function() {
-    //     status_bool = localStorage.getItem("ejudge_dark_enabled") == 'true';
-    //     status_bool = !status_bool;
-    //     localStorage.setItem("ejudge_dark_enabled", status_bool);
-    //     // console.log(localStorage.getItem("ejudge_dark_enabled") == 'true');
-    //     location.reload();
-    // });
-    
-    // if(localStorage.getItem("ejudge_dark_enabled") == 'true'){
-    //     // $('head').prepend("<link href="+chrome.runtime.getURL('styles.css')+" rel='stylesheet' type='text/css'>");
-    // }
-
-    //Change Favicon and Logo(front page only) to white variant
-    // $('[rel="shortcut icon"]').attr("href", chrome.runtime.getURL('favicon_wt_16.png'));
 
     //Problems page
     if(window.location.href.includes("problem")){
@@ -79,17 +62,18 @@ $( document ).ready(function() {
                 arr_out[pos].push($(this).val());
                 last_id = case_id;
             });
-            return JSON.stringify(arr_out);
+            return JSON.stringify(arr_out.sort());
         }
 
         //Save current answers into localStorage
         function saveAnswers(){
+            // prompt("heres to you", getAnswers());
             localStorage.setItem("quiz_answers", getAnswers());
         }
 
         //Fill in answers box with given array
         function fillAnswers(answerArray){
-            answerArray =  JSON.parse(answerArray);
+            answerArray = JSON.parse(answerArray).sort();
             try {
                 current = parseInt(answerArray[0][0]);
                 for (var i = 0; i < answerArray.length; i++) {
