@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title,
   color: #0097E0 !important;
 }
 
-a.btn-default, td > textarea, select{
+a.btn-default, td > textarea, select, textarea{
   color: black !important;
 }
 
