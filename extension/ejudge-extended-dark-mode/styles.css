@@ -56,6 +56,15 @@ nav, pre, .well{
   background: #222 !important;
 }
 
+i.fa.fa-2x.fa-trophy:before {
+  content: "\25CF";
+  font-size: 36px;
+}
+
+label[for=theme]:after {
+  content: " (Why change the theme when you already use Dark Mode?)";
+}
+
 /*Syntax highlight recolor*/
 .syntaxhighlighter div.line.alt2, .syntaxhighlighter div.line.alt1 {
   background-color: #333 !important;
