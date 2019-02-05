@@ -67,7 +67,6 @@ $( document ).ready(function() {
 
         //Save current answers into localStorage
         function saveAnswers(){
-            // prompt("heres to you", getAnswers());
             localStorage.setItem("quiz_answers", getAnswers());
         }
 
