@@ -2,7 +2,7 @@ img[alt=Logo]{
 	content:url("chrome-extension://jakppieempchopbjjilgiickikdkkmmk/itkmitl_wt_140.png");
 }
 
-h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title, .label, a.btn, .nav > li > a > i, #question-0 > p, pre, .well, div.nav-tabs-custom > .nav-tabs > li.active > a{
+h1, h2, h3, h4, h5, small, td, th, dt, dd, span, .active, .box-body, .box-title, .label, a.btn, .nav > li > a > i, #question-0 > p, pre, .well, div.nav-tabs-custom > .nav-tabs > li.active > a, div[style^="background-color:#f5f5f5;"]{
   color: white !important;
 }
 
@@ -14,7 +14,7 @@ a.btn-default, td > textarea, select, textarea{
   color: black !important;
 }
 
-body, .content, pre, .well{
+body, .content, pre, .well, div[style^="background-color: rgb(245, 245, 245)"], div[style^="background-color:#f5f5f5;"]{
   background-color: #555 !important;
 }
 
@@ -44,7 +44,7 @@ li.disabled > span {
   background-color: #333333 !important;
 }
 
-nav, pre, .well{
+nav, pre, .well, div[style^="background-color: rgb(245, 245, 245)"], div[style^="background-color:#f5f5f5;"]{
   border: 0 !important;
 }
 
