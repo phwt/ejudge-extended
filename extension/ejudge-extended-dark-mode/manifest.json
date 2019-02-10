@@ -1,20 +1,22 @@
 {  
   "content_scripts":[  
-     {  
-        "css":[  "styles.css"],
+     {
+        "css":["styles.css"],
+        "js":["content.js"],
         "matches":["https://ejudge.it.kmitl.ac.th/*"]
      }
   ],
   "manifest_version":2,
   "name":"<e>Judge Extended - Dark Mode",
   "description":"Enable Dark Mode in <e>Judge grading system.",
-  "version":"0.1.4",
+  "version":"0.1.5",
   "icons":{  
      "128":"/assets/icon128.png",
      "16":"/assets/icon16.png",
      "48":"/assets/icon48.png"
   },
   "web_accessible_resources":[  
-     "itkmitl_wt_140.png"
+     "itkmitl_wt_140.png",
+     "favicon_wt_16.png"
   ]
 }
