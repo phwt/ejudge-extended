@@ -28,8 +28,9 @@ Extend \<e\>Judge functionality for ease in coding and submitting
 ## Installation
 
 ### Chrome Extension
-[Install \<e\>Judge Extended on Chrome Web Store](https://chrome.google.com/webstore/detail/%3Ce%3Ejudge-extended/akeabeeepogfafbolmaahdefoimmllna/)
-[Install \<e\>Judge Extended - Dark Mode on Chrome Web Store](https://chrome.google.com/webstore/detail/%3Ce%3Ejudge-extended-dark-mo/jakppieempchopbjjilgiickikdkkmmk/related)
+[Install \<e\>Judge Extended from Chrome Web Store](https://chrome.google.com/webstore/detail/%3Ce%3Ejudge-extended/akeabeeepogfafbolmaahdefoimmllna/)
+
+[Install \<e\>Judge Extended - Dark Mode from Chrome Web Store](https://chrome.google.com/webstore/detail/%3Ce%3Ejudge-extended-dark-mo/jakppieempchopbjjilgiickikdkkmmk/related)
 
 ### Visual Studio Code
 [Download \<e\>Judge Extended for Visual Studio Code from the releases page](https://github.com/phwt/ejudge-extended/releases)
