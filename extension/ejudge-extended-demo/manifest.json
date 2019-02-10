@@ -1,0 +1,20 @@
+{  
+  "content_scripts":[  
+     {  
+        "js":[
+           "jquery-3.3.1.min.js",
+           "content.js"
+        ],
+        "css":[
+          "styles.css" 
+        ],
+        "matches":[  
+           "https://ejudge.it.kmitl.ac.th/*"
+        ]
+     }
+  ],
+  "manifest_version":2,
+  "name":"<e>Judge Extended - Demo",
+  "description":"Extension built for testing purpose.",
+  "version":"0.1"
+}

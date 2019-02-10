@@ -1,0 +1,48 @@
+a[href^='https://ejudge.it.kmitl.ac.th/account/'],
+a[href^='https://ejudge.it.kmitl.ac.th/problem/'],
+.pull-left.info > p,
+.dropdown-toggle > span,
+.text-muted,
+.content-header > h1,
+span,
+small,
+dd,
+dd > span.label-info
+{
+    color: #444 !important;
+    background-color: #444 !important;
+}
+
+.breadcrumb > li:nth-child(3) > a,
+.breadcrumb > .active,
+pre,
+.table-case > tbody > tr > td
+{
+    color: #555 !important;
+    background-color: #555 !important;
+}
+pre:after{
+    content:'wsaddadsaad';
+}
+img.img-circle{
+    filter: brightness(0)!important;
+}
+.small-box > div > h3:after{
+    content: "000000000";
+}
+
+.label-success {
+    background-color: #5cb85c !important;
+}
+.fa-star {
+    font-weight: 900 !important;
+}
+.progress-bar-success{
+    width: 5% !important;
+}
+/* .pull-left.info > p{
+    display: none;
+}
+.pull-left.info > p:after{
+    content: 'ww' !important;
+} */
