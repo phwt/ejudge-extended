@@ -1,6 +1,8 @@
 # \<e\>Judge Extended
 Extend \<e\>Judge functionality for ease in coding and submitting
 
+![Opening and Submitting Demo](assets/demo.gif)
+
 ## Features
 ### Chrome Extension
 #### Problem
