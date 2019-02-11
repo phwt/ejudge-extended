@@ -47,7 +47,7 @@ Extend \<e\>Judge functionality for ease in coding and submitting
 
 ## Usage
 
-**Notes - All file names must be in this format `[problem_id].c` and all are located in the same directory**
+**Notes - All file names must be in format of `[problem_id].ext` and located in the same directory**
 
 ### Chrome Extension
 1. Install the extension from Chrome Web Store and setup the path.
