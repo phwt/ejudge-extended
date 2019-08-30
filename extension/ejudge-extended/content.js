@@ -4,12 +4,12 @@ $( document ).ready(function() {
     if(window.location.href.includes("problem")){
 
         //Open problem on computer
-        $(".dl-horizontal").append(
-            "<br><div class='btn-group' style='display:flex' role='group'>"+
-            "<button id='ext_open' style='flex:1' class='btn btn-default'>View on computer</button>"+
-            "<button id='ext_edit' style='flex:1' class='btn btn-default'><i class='fa fa-edit'></i></button>"+
-            "</div>"
-        );
+        // $(".dl-horizontal").append(
+        //     "<br><div class='btn-group' style='display:flex' role='group'>"+
+        //     "<button id='ext_open' style='flex:1' class='btn btn-default'>View on computer</button>"+
+        //     "<button id='ext_edit' style='flex:1' class='btn btn-default'><i class='fa fa-edit'></i></button>"+
+        //     "</div>"
+        // );
 
         var getPath = function(){return localStorage.getItem("code_path")};
         var getLang = function(){return $(".dl-horizontal dd:nth-child(6)").html()};
@@ -23,7 +23,7 @@ $( document ).ready(function() {
             alert("Operation Terminated by user");
         }
 
-        if((getPath() == null) || (getPath() == "")){setPath()}
+        // if((getPath() == null) || (getPath() == "")){setPath()}
 
         $("#ext_open").click(function() {
             var url = window.location.href;
